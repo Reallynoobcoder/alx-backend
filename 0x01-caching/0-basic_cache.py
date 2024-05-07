@@ -6,6 +6,10 @@ BaseCaching = __import__('base_caching').BaseCaching
 class BasicCache(BaseCaching):
     """BasicCache that inherits from BaseCaching."""
 
+    def __init__(self):
+        """Initiliaze."""
+        super().__init__()
+
     def put(self, key, item):
         """Put item."""
 
